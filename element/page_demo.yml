@@ -1,0 +1,104 @@
+doctype:
+  type: text
+  text: '<!DOCTYPE html>'
+html:
+  type: html
+  innerHTML:
+    head:
+      type: head
+      innerHTML:
+        -
+          type: widget
+          data:
+            plugin: 'theme/include'
+            method: include
+            data:
+              bootswatch:
+                theme: Journal
+    body:
+      type: body
+      innerHTML:
+        -
+          type: style
+          innerHTML: "pre{max-height:300px}"
+
+        -
+          type: div
+          attribute: 
+            class: container
+          innerHTML: 
+            -
+              type: div
+              attribute: 
+                class: row
+              innerHTML: 
+                -
+                  type: div
+                  attribute: 
+                    class: col-md-12
+                  innerHTML: 
+                    -
+                      type: h1
+                      innerHTML: Google Calendar Demo
+                    -
+                      type: div
+                      attribute: 
+                        class: alert alert-success
+                      innerHTML: rs:calendar
+                    -
+                      type: h2
+                      innerHTML: getAllTimeEvents
+                    -
+                      type: pre
+                      innerHTML: rs:getAllTimeEvents
+                    -
+                      type: h2
+                      innerHTML: getAllDayEvents
+                    -
+                      type: pre
+                      innerHTML: rs:getAllDayEvents
+                    -
+                      type: h2
+                      innerHTML: getCalendar
+                    -
+                      type: pre
+                      innerHTML: rs:getCalendar
+                    -
+                      type: h2
+                      innerHTML: getMinutesPerDay
+                    -
+                      type: pre
+                      innerHTML: rs:getMinutesPerDay
+                    -
+                      type: h2
+                      innerHTML: getMinutesPerMonth
+                    -
+                      type: pre
+                      innerHTML: rs:getMinutesPerMonth
+                    -
+                      type: h2
+                      innerHTML: getMinutesPerWeek
+                    -
+                      type: pre
+                      innerHTML: rs:getMinutesPerWeek
+                    -
+                      type: h2
+                      innerHTML: getMinutesPerWeekAndDay
+                    -
+                      type: pre
+                      innerHTML: rs:getMinutesPerWeekAndDay
+                    -
+                      type: h2
+                      innerHTML: getCompleteDateArray
+                    -
+                      type: pre
+                      innerHTML: rs:getCompleteDateArray
+                    -
+                      type: h2
+                      innerHTML: getStartAndEndDate
+                    -
+                      type: small
+                      innerHTML: Using current week and year.
+                    -
+                      type: pre
+                      innerHTML: rs:getStartAndEndDate
