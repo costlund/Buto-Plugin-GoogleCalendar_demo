@@ -1,5 +1,9 @@
-version: 1.0.0
+version: 1.0.1
 history:
+  1.0.1:
+    date: '2023-07-25'
+    title: Versions
+    description: 'Versions update.'
   1.0.0:
     date: '2023-06-13'
     title: 'First version'
@@ -10,7 +14,7 @@ plugin:
     version: 1.5.1
   -
     name: google/calendar
-    version: 1.0.0
+    version: 1.1.0
   -
     name: theme/include
     version: 1.20.3
